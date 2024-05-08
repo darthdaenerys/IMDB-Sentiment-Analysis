@@ -34,3 +34,22 @@ body{
 .App-link {
 	color: #61dafb;
 }
+#navbar {
+	display: flex;
+	flex-direction: row;
+	height: 6rem;
+	justify-content: center;
+	box-shadow: 0rem .2rem 1rem #0000005b;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+	background-color: rgb(22, 26, 31);
+	align-items: center;
+}
+i{
+	display: inline-block;
+	font-size: 4rem;
+	align-content: center;
+	margin: 0rem 3rem;
+	color: white;
+}
