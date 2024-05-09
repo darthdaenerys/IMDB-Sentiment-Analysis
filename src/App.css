@@ -76,3 +76,15 @@ i{
 	justify-content: center;
 	align-items: flex-start;
 }
+#sentiment{
+	margin: 9.5rem 1rem;
+	width: 20rem;
+	padding: 2rem 1rem;
+	border: .2rem solid rgb(45, 53, 63);
+	border-radius: 1.5rem;
+	background-color: white;
+}
+#sentiment h1{
+	text-align: center;
+	font-size: 2.5rem;
+}
