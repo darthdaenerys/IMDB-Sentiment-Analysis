@@ -94,3 +94,13 @@ i{
 	justify-content: space-around;
 	margin: 1rem 0rem;
 }
+#response{
+	font-size: 2rem;
+	text-align:center;
+	margin: .5rem 0rem;
+}
+#confidence{
+	font-size: 2rem;
+	text-align:center;
+	margin: .5rem 0rem;
+}
