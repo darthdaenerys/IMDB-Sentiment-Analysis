@@ -88,3 +88,9 @@ i{
 	text-align: center;
 	font-size: 2.5rem;
 }
+.sentiment-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 1rem 0rem;
+}
