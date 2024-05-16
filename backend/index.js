@@ -18,6 +18,18 @@ const pythonProcess = spawn('python', ['../predict.py']);
 
 app.post('/query', async (req, res) => {
     const json = await req.body;
+
+    try {
+        pythonProcess.stdin.write(json.query+'\n');
+
+        pythonProcess.stdout.once('data', (chunk) => {
+            const generatedText = chunk.toString();
+            res.status(200).json(JSON.stringify(generatedText));
+        });
+    }
+    catch(error){
+        console.log(error);
+    }
 })
 
 app.listen(port, () => {
