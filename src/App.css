@@ -121,3 +121,18 @@ i{
 .btn:hover {
     background-color: rgb(22, 26, 31);
 }
+#textForm{
+	margin: 0rem 3rem;
+	padding: 1rem;
+	font-size: 2rem;
+	border: .2rem solid rgb(45, 53, 63);
+	transition-duration: .2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	border-radius: 1rem;
+	font-family: 'Ubuntu';
+}
+#textForm:focus{
+	outline: none;
+	box-shadow: 0rem 0rem 3rem #00000062;
+}
