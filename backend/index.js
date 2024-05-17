@@ -26,6 +26,11 @@ app.post('/query', async (req, res) => {
             const generatedText = chunk.toString();
             res.status(200).json(JSON.stringify(generatedText));
         });
+
+        pythonProcess.stderr.once('data', (data) => {
+            res.status(500).send("Neutral, 0.00");
+            console.log(data);
+        });
     }
     catch(error){
         console.log(error);
