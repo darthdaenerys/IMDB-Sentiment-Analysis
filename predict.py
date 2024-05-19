@@ -18,6 +18,8 @@ def custom_standardize(input_data):
         text=tf.strings.regex_replace(text,f' {word} ',f" {stemmer.stem(word)} ")
     return text
 
+tf.keras.utils.get_custom_objects()['custom_standardize'] = custom_standardize
+
 def get_sentiment(review):
     preds=end2end_model(np.array([review]))
 
