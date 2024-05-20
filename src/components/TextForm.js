@@ -10,6 +10,7 @@ export default function TextForm(props) {
 			<div className='textform'>
 				<h2>{props.title}</h2>
 				<textarea value={text} name="query" id="textForm" cols="60" rows="14" onChange={handleOnChange}></textarea>
+				<button className="btn" onClick={handleClick}>{props.buttonText}</button>
 			</div>
 		</>
 	)
