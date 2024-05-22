@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function TextForm(props) {
 	const [text, setText] = useState("");
+	const [response, setResponse] = useState("...");
 	const handleOnChange = (event) => {
 		setText(event.target.value);
 	}
