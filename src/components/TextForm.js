@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Sentiment from './Sentiment';
 
 export default function TextForm(props) {
 	const [text, setText] = useState("");
@@ -14,6 +15,7 @@ export default function TextForm(props) {
 				<textarea value={text} name="query" id="textForm" cols="60" rows="14" onChange={handleOnChange}></textarea>
 				<button className="btn" onClick={handleClick}>{props.buttonText}</button>
 			</div>
+			<Sentiment response={response} confidence={confidence} sentimentColor={sentimentColor} />
 		</>
 	)
 }
