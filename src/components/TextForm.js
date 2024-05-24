@@ -6,6 +6,10 @@ export default function TextForm(props) {
 	const [response, setResponse] = useState("...");
 	const [confidence, setConfidence] = useState("...");
 	const [sentimentColor, setSentimentColor] = useState({});
+
+	const preProcess = (text) => {
+		return text.replace(/\n/g, " ");
+	}
 	const handleOnChange = (event) => {
 		setText(event.target.value);
 	}
