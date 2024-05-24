@@ -7,6 +7,12 @@ export default function TextForm(props) {
 	const [confidence, setConfidence] = useState("...");
 	const [sentimentColor, setSentimentColor] = useState({});
 
+	const postProcess = (text) => {
+		let [sentiment, value] = text.split(", ");
+		value = parseFloat(value);
+		sentiment = sentiment.replace(/"/g, '');
+		return { sentiment, value };
+	}
 	const preProcess = (text) => {
 		return text.replace(/\n/g, " ");
 	}
