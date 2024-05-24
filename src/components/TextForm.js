@@ -5,6 +5,7 @@ export default function TextForm(props) {
 	const [text, setText] = useState("");
 	const [response, setResponse] = useState("...");
 	const [confidence, setConfidence] = useState("...");
+	const [sentimentColor, setSentimentColor] = useState({});
 	const handleOnChange = (event) => {
 		setText(event.target.value);
 	}
