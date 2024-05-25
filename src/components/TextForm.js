@@ -18,6 +18,13 @@ export default function TextForm(props) {
 	}
 	const handleClick = async () => {
 		const button = document.querySelector('.btn');
+		try {
+			button.disabled = true;
+			setResponse('...')
+			setConfidence('...');
+		} catch (error) {
+			console.log('There was an error', error);
+		}
 	}
 	const handleOnChange = (event) => {
 		setText(event.target.value);
