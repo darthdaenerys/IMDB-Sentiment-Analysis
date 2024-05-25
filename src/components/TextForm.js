@@ -16,6 +16,9 @@ export default function TextForm(props) {
 	const preProcess = (text) => {
 		return text.replace(/\n/g, " ");
 	}
+	const handleClick = async () => {
+		const button = document.querySelector('.btn');
+	}
 	const handleOnChange = (event) => {
 		setText(event.target.value);
 	}
