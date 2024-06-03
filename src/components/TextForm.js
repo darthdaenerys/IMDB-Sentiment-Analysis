@@ -22,6 +22,13 @@ export default function TextForm(props) {
 			button.disabled = true;
 			setResponse('...')
 			setConfidence('...');
+			const response = await fetch('http://localhost:5000/query', {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({ "query": preProcess(text) })
+			});
 		} catch (error) {
 			console.log('There was an error', error);
 		}
