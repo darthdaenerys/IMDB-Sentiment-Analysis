@@ -25,6 +25,9 @@ export default function TextForm(props) {
 		} catch (error) {
 			console.log('There was an error', error);
 		}
+		finally {
+			button.disabled = false;
+		}
 	}
 	const handleOnChange = (event) => {
 		setText(event.target.value);
