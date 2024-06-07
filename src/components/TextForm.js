@@ -30,6 +30,8 @@ export default function TextForm(props) {
 				body: JSON.stringify({ "query": preProcess(text) })
 			});
 			let json = await response.json();
+			json = postProcess(json);
+			setResponse(json.sentiment);
 		} catch (error) {
 			console.log('There was an error', error);
 		}
