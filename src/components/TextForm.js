@@ -33,6 +33,7 @@ export default function TextForm(props) {
 			json = postProcess(json);
 			setResponse(json.sentiment);
 			setConfidence(`${json.value}%`)
+			setSentimentColor(json.sentiment === 'Positive' ? { borderColor: '#07742D', backgroundColor: '#78FA4C' } : { borderColor: '#720D08', backgroundColor: '#F24236' })
 		} catch (error) {
 			console.log('There was an error', error);
 		}
