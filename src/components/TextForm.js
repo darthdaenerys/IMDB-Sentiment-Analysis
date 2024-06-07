@@ -32,6 +32,7 @@ export default function TextForm(props) {
 			let json = await response.json();
 			json = postProcess(json);
 			setResponse(json.sentiment);
+			setConfidence(`${json.value}%`)
 		} catch (error) {
 			console.log('There was an error', error);
 		}
