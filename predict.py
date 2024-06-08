@@ -23,6 +23,10 @@ end2end_model=load_model('../end2end_model')
 
 def get_sentiment(review):
     preds=end2end_model(np.array([review]))
+    if preds[0]>.5:
+        print(f'Positive, {preds[0].numpy()[0]*100:.2f}',flush=True,end='')
+    else:
+        print(f'Negative, {(1-preds[0]).numpy()[0]*100:.2f}',flush=True,end='')
 
 while True:
     line = input()
