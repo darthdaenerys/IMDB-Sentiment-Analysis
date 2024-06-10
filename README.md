@@ -1,10 +1,12 @@
 # IMDB Sentiment Analysis
 
-![logo](IMDB_Logo.png)
+![alt text](images/demo.gif)
 
 Subsets of IMDb data are available for access to customers for personal and non-commercial use.
 
 ## Introduction
+
+![logo](images/IMDB_Logo.png)
 
 Given the availability of a large volume of online review data (Amazon, IMDB, etc.), sentiment analysis becomes increasingly important. In this project, a sentiment classifier is built which evaluates the polarity of a piece of text being either positive or negative.
 
@@ -21,12 +23,12 @@ For more dataset information, please go through this following [link](http://ai.
 ## Model
 
 |Metrics| Precision | Recall | Accuracy |
-|-| - | -| - |
-|Testing|0.949|0.961|0.955
+|:-:|:-:|:-:|:-:|
+|Testing|0.949|0.961|0.955|
 
-![Alt text](model.png)
+![Alt text](images/model.png)
 
-![Alt text](loss.png)
+![Alt text](images/loss.png)
 
 ## Usage
 
