@@ -33,3 +33,19 @@ For more dataset information, please go through this following [link](http://ai.
 ## Usage
 
 Feel free to use the model and your own dataset.
+
+
+## Getting Started
+
+If you want to run the application locally use following steps -
+
+- git clone `https://github.com/darthdaenerys/IMDB-Sentiment-Analysis.git`
+- Navigate to the project directory: `cd IMDB-Sentiment-Analysis`
+- Install Python dependencies: `pip install -r requirements.txt`
+- Move to backend directory `cd backend`
+- Install Node.js dependencies(open another terminal): `npm install`
+- Start the server: `node index.js`
+- Move back to parent directory `cd ..`
+- Install react dependencies `npm install`
+- `npm start` Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
