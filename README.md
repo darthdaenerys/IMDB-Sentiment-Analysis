@@ -49,3 +49,9 @@ If you want to run the application locally use following steps -
 - Install react dependencies `npm install`
 - `npm start` Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Contributing
+
+If you would like to contribute to this project, you can fork the repository and submit a pull request with your changes. Please make sure to test your changes thoroughly before submitting the pull request.
+
+*Thanks for visiting!*
